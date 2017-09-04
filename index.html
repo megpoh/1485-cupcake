@@ -63,7 +63,7 @@
 	<div class="bg-blue">
 		<div class="wrapper">
 			<header>
-				<h2>Our Treats</h2>
+				<h2>Our Treats</h2><!--I left out the circular images in this section because I couldn't remember how you wanted us to save them out or what to do with them again?-->
 			</header>
 			<p>We have something for every craving, celebration and occasion. We also offer several allergen free options.</p>
 			<div class="row">
@@ -192,20 +192,48 @@
 			</table>
 			<form>
 				<label for="first-name">First Name</label>
-				<input type="text" name="First Name" id="first-name">
+				<input type="text" name="FirstName" id="first-name">
 				<label for="last-name">Last Name</label>
-				<input type="text" name="Last Name" id="last-name">
-				
-				<!--Start here-->
-				<label for="email">Email</label>
-				<input id="email" type="email" name="Email"> 
-				<label for="messages">Messages</label>
-				<textarea id="messages"></textarea>
-				<p><a href="#">Submit</a></p>
+				<input type="text" name="LastName" id="last-name">
+				<label for="email-address">Email Address</label>
+				<input type="email" name="EmailAddress" id="email-address"> 
+				<label for="special-requests">Special Requests</label>
+				<textarea id="special-requests" maxlength="500"></textarea>
+				<p>Occasion</p>
+				<select name="Occasion">
+					<option>Birthday</option>
+					<option>Halloween</option>
+					<option>Christmas</option>
+					<option>No special occasion</option>
+					<option>Other</option>
+				</select>
+				<a href="#">Pay on Paypal</a>
 			</form>
 		</div>
 	</div>
 </section>
+<footer>
+	<div class="bg-brown">
+		<div class="wrapper">
+			<dl>
+				<dt>Real Fake Authentic</dt>
+				<dd>Specialty bakery dedicated to creating and baking several different sweet treats. </dd>
+				<dt>Our Location</dt>
+				<dd>123 Fake Street #101 Fakersville, FA 12345</dd>
+				<dt>Connect</dt>
+				<dd>
+					<ul>
+						<li><a href="https://www.facebook.com/" target="_blank"></a> <span>Facebook</span> </li>
+						<li><a href="https://www.tumblr.com/" target="_blank"></a> <span>Tumblr</span> </li>
+						<li><a href="https://www.pinterest.com/" target="_blank"></a> <span>Pinterest</span> </li>
+						<li><a href="https://www.linkedin.com/" target="_blank"></a> <span>Linked In</span> </li>
+						<li><a href="https://www.rss.com/" target="_blank"></a> <span>RSS</span> </li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+	</div>
+</footer>
 
 
 
