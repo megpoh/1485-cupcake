@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet"> 
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <title>Pohlen-Assignment 4</title>
@@ -12,18 +14,19 @@
 	<div class="wrapper">
 		<nav>
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#home"><img src="img/cupcake-logo.png" alt="Real, Authentic, Fake logo, "></a></li>
-				<!--SHOULDN'T THE LOGO BE THE H1???-->
-				<li><a href="#products">Products</a></li>
-				<li><a href="#contact-us">Contact Us</a></li>
+				<li class="nav-btn"><a href="#">Home</a></li>
+				<li class="nav-btn"><a href="#about">About</a></li>
+				<li><h1><a href="#home"><img src="img/cupcake-logo.png" alt="Logo and heading one for Real, Authentic, Fake cupcakes"></a></h1></li>
+				<li class="nav-btn"><a href="#products">Products</a></li>
+				<li class="nav-btn"><a href="#contact-us">Contact Us</a></li>
 			</ul>
 		</nav>
-		<p>Try Our Signature Cupcake</p>
-	</div>
+		<div id="home-image">
+			<p>Try Our Signature Cupcake</p></div>
+		</div>
+		
 </header>
-<div id="#about" class="bg-white wrapper">
+<div id="#about" class="wrapper">
 	<div class="row">
 		<img src="img/cupcake-blue.jpg" alt="White frosted cupcake with blue wrapper, sitting on top of cake dish.">
 		<section class="f-l"> <!--FLOAT IMAGE LEFT-->
@@ -33,17 +36,25 @@
 			<p>We offer cupcakes in three sizes: Jumbo Gourmet (filled), Regular &amp; Mini. Plus, we make Cakes, Cake Balls/Pops, Brownie Shots and several other sweet treats!</p>
 			<p>We are open 7 days a week, beginning Sunday at 11 am till 4 pm. Monday through Friday 8 am till 7 pm, and Saturday 10 am to 5 pm.</p>
 			<p>Stop in today for a treat or give us a call for an order!  We take special orders daily and provide delivery options. For pricing inquiries, <a href="#"><b>please give us a call</b></a>.</p>
-			<!--TELEPHONE NUMBER LINK-->
-			<p><a href="#">Contact Us</a></p>
+			<p><a href="tel:+18005551212">Contact Us</a></p>
 		</section>
 		<section class="f-r">
 			<header>
 				<h2>Hours</h2>
 			</header>
 			<ul>
-				<li>Monday&ndash;Friday 8:00 AM&ndash;7:00 PM</li>
-				<li>Saturday 10:00 AM&ndash;5:00 PM</li>
-				<li>Sunday 11:00 AM&ndash;4:00 PM</li>
+				<li>
+					<h3>Monday&ndash;Friday</h3>
+					<p><time datetime="08:00">8:00 AM</time>&ndash;<time datetime="19:00">7:00 PM</time></p>
+				</li>
+				<li>
+					<h3>Saturday</h3>
+					<p><time datetime="10:00">10:00 AM</time>&ndash;<time datetime="17:00">5:00 PM</time></p>
+				</li>
+				<li>
+					<h3>Sunday</h3>
+					<p><time datetime="11:00">11:00 AM</time>&ndash;<time datetime="16:00">4:00 PM</time></p>
+				</li>
 			</ul>
 		</section>
 	</div>
@@ -79,7 +90,7 @@
 		</div>
 	</div>
 </section>
-<section class="bg-white wrapper">
+<section class="wrapper">
 	<header>
 		<h2>Daily Flavors</h2>
 	</header>
@@ -146,8 +157,7 @@
 			<caption>Prices</caption>
 			<thead>
 				<tr>
-					<th colspan="1"></th>
-					<th>Mini</th>
+					<th colspan="2">Mini</th>
 					<th>Regular</th>
 					<th>Jumbo</th>
 				</tr>
@@ -167,8 +177,7 @@
 				</tr>
 				<tr>
 					<td>Two Dozen</td>
-					<td><span>$</span>2.00<b>Off</b></td>
-					<td colspan="2"></td>
+					<td colspan="3"><span>$</span>2.00<b>Off</b></td>
 				</tr>
 			</tbody>
 		</table>
