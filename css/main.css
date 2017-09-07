@@ -34,12 +34,8 @@
 	box-sizing: border-box;
 	font: 31px 'Open Sans', sans-serif;
 	color: #432920;
-}
-
-* {
 	font: 400 14px 'Montserrat', sans-serif;
 }
-
 
 
 /*--------------------------------------------------------------
@@ -50,8 +46,7 @@
 h2 {
 	text-transform: uppercase;
 	font-size: 28px;
-	font-weight: 500;
-	
+	font-weight: 500;	
 }
 
 #about-us h2, #hours h2 {
@@ -76,6 +71,11 @@ h3 {
 	color: #432920;
 	margin-bottom: 14px;
 	text-transform: uppercase;
+}
+
+h4 {
+	color: #7bcfc0;
+	margin: 54px 0 14px;
 }
 
 
@@ -110,10 +110,11 @@ h3 {
 
 #about-us p:nth-of-type(3) a {
 	text-decoration: none;
+	font-weight: 600;
 }
 
-#about-us p:nth-of-type(3) a:hover {
-	color: #7bcfc0; /* WONT WORK?????????????????/ */
+a[href="tel:+18005551212"]:hover {
+	color: #7bcfc0; 
 }
 
 #our-treats section p:last-child a {
@@ -128,57 +129,132 @@ h3 {
 	background-color: #9ae5d7;
 }
 
+#paypal-btn a {
+	color: #c92720;
+	text-decoration: none;
+	background-color: #fff;
+	padding: 15px 20px;
+}
 
+#paypal-btn a:hover {
+	color: #fff;
+	background-color: #9ae5d7;
+}
 
 /* 1.4 - Forms */
-
-legend {
+#fieldset-left legend {
 	display: none;
 }
 
+legend {
+	text-align: left;
+}
+
+#fieldset-left label, legend {
+	text-transform: uppercase;
+}
 
 fieldset {
 	border: none;
 	margin: 0;
 	padding: 0;
-    display: block;
 }
 
-
-
-
 form {
-	font: 700 15px 'Open Sans', sans-serif;
-	width: 500px;
+	font: 500 12px 'Open Sans', sans-serif;
 	text-align: center;
-	margin: 0 auto;
+	margin: 0 98px;
 }
 
 input[type="text"] {
 	padding: 5px 10px;
 }
 
-textarea[id="message"] {
-	padding: 80px 10px;
-	width: 100%;
-	display: inline-block;
-}
-
-#contact p {
-	text-align: right;
-}
-
 label, input {
 	display: block;
 	text-align: left;
-	margin-bottom: 4px;
-	width: 100%;
+}
+
+#fieldset-right input {
+	display: inline;
+}
+
+#fieldset-left input {
+	height: 47px;
+}
+
+#fieldset-left input, #fieldset-left label, textarea {
+	width: 419px;	
 }
 
 label {
 	margin-top: 20px;
 }
 
+#fieldset-right {
+	width: 427px;
+	margin-left: 28px;
+}
+
+#fieldset-left label:first-of-type {
+	margin-top: 0;
+}
+
+#fieldset-right input {
+	padding-right: 0;
+}
+
+#occasion select {
+	width: 359px;
+}
+
+#quantity {
+	margin: 28px 0 46px;
+}
+
+#quantity label {
+	margin-bottom: 0;
+}
+
+#flavor {
+	margin-bottom: 59px
+}
+
+#dropdown {
+	width: 427px;
+	height: 47px;
+	margin-top: 15px;
+}
+
+#fieldset-left label, legend {
+	margin-bottom: 15px;
+}
+
+#fieldset-right legend {
+	margin-bottom: 0;
+}
+
+textarea {
+	height: 183px;
+}
+
+#quantity label {
+	margin-right: 52px;
+}
+
+.flavor-section:first-child {
+	margin-right: 24px;
+}
+
+#signature-type, #allergen-free-type, #vegan-type {
+	margin-right: 59px;
+}
+
+#paypal-btn {
+	margin: 108px 0 0 276px;
+	text-transform: uppercase;
+	
+}
 
 
 /* 1.5 - Lists */
@@ -200,7 +276,7 @@ label {
 
 /* 1.6 - Tables */
 
-table{
+table {
 	width: 606px;
 	border-collapse: collapse;
 	margin: 32px 0 50px 230px;
@@ -216,7 +292,7 @@ table{
 caption {
 	text-align: center;
 	background-color: #c7ebe4;
-	padding: 10px 235px;
+	padding: 20px 235px;
 }
 
 th {
@@ -233,11 +309,11 @@ tbody tr td:first-child {
 	text-align: left;
 }
 
-tbody tr:nth-child(odd){
+tbody tr:nth-child(odd) {
 	background-color: #c7ebe4;
 }
 
-tbody tr:nth-child(even){
+tbody tr:nth-child(even) {
 	background-color: #fff;
 }
 
@@ -349,6 +425,9 @@ nav li a:hover {
 	text-align: center;
 }
 
+#treats-row {
+	padding: 10px 0;
+}
 
 /* 3.2	- Site Header */
 .row {
@@ -374,8 +453,7 @@ nav li a:hover {
 
 #circle-one, #circle-two, #circle-three {
 	width: 180px; 
-	height: 180px; 
-	background: red; 
+	height: 180px;  
 	-moz-border-radius: 90px; 
 	-webkit-border-radius: 90px; 
 	-ms-border-radius: 90px;
@@ -405,6 +483,26 @@ nav li a:hover {
 	
 }
 /* 3.3	- Site Footer */
+footer {
+	padding-bottom: 36px;
+}
+
+footer p {
+	color: #fff;
+}
+
+footer section:first-of-type {
+	width: 270px;
+	margin-right: 129px;
+}
+
+footer section:nth-of-type(2) {
+	width: 142px;
+}
+
+footer section:last-child {
+	margin-right: 71px;
+}
 
 /*--------------------------------------------------------------
 4.0 - Utility
@@ -437,6 +535,79 @@ div#home-image {
 	float: left;
 }
 
+div#circle-one {
+	background: url(../img/cupcake-one.png);
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position: center;
+	background-color: #fff;
+}
+
+div#circle-two {
+	background: url(../img/cupcake-two.png);
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position: center;
+	background-color: #fff;
+}
+
+div#circle-three {
+	background: url(../img/cupcake-three.png);
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position: center;
+	background-color: #fff;
+	
+}
+
+
+
+
+footer ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+footer li {
+	padding-right: 30px;
+}
+
+footer ul span {
+	display: none;
+}
+
+footer ul a, footer ul li {
+	display: inline-block;
+}
+
+footer ul li a {
+	width: 20px;
+	height: 20px;
+}
+
+footer ul li:first-child a {
+	background: url(../img/sprite-fb.png) no-repeat 0 0;
+}
+
+footer ul li:nth-child(2) a {
+	background: url(../img/sprite-tumblr.png)
+}
+
+footer ul li:nth-child(3) a {
+	background: url(../img/sprite-pinterest.png)
+}
+
+footer ul li:nth-child(4) a {
+	background: url(../img/sprite-linked-in.png)
+}
+
+footer ul li:last-child a {
+	background: url(../img/sprite-rss.png)
+}
+
+footer ul li a:hover {
+	background-position: 0 -20px;
+}
 
 
 

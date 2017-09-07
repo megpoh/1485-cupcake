@@ -36,7 +36,7 @@
 				</header>
 				<p>We offer cupcakes in three sizes: Jumbo Gourmet (filled), Regular &amp; Mini. Plus, we make Cakes, Cake Balls/Pops, Brownie Shots and several other sweet treats!</p>
 				<p>We are open 7 days a week, beginning Sunday at 11 am till 4 pm. Monday through Friday 8 am till 7 pm, and Saturday 10 am to 5 pm.</p>
-				<p>Stop in today for a treat or give us a call for an order!  We take special orders daily and provide delivery options. For pricing inquiries, <a href="tel:+18005551212"><b>please give us a call</b></a>.</p>
+				<p>Stop in today for a treat or give us a call for an order!  We take special orders daily and provide delivery options. For pricing inquiries, <a href="tel:+18005551212">please give us a call</a>.</p>
 				<p id="contact-btn"><a href="#">Contact Us</a></p>
 			</section>
 			<section class="f-r" id="hours">
@@ -66,7 +66,7 @@
 			<h2>Our Treats</h2>
 		</header>
 		<p>We have something for every craving, celebration and occasion.<br>We also offer several allergen free options.</p>
-		<div class="row">
+		<div class="row" id="treats-row">
 			<section class="f-l">
 				<div class="circle" id="circle-one"></div>
 				<header>
@@ -181,144 +181,151 @@
 				</tr>
 				<tr>
 					<td>Two Dozen</td>
-					<td colspan="3">$<span></span>2.00 <b>Off</b></td>
+					<td colspan="3">$<span>2.00</span> <b>Off</b></td>
 				</tr>
 			</tbody>
 		</table>
 		<form>
-			<fieldset>
-				<legend>Contact Order Information</legend>
-				<label for="first-name">First Name</label>
-				<input type="text" name="FirstName" id="first-name">
-				<label for="last-name">Last Name</label>
-				<input type="text" name="LastName" id="last-name">
-				<label for="email-address">Email Address</label>
-				<input type="email" name="EmailAddress" id="email-address">
-				<label for="phone-number">Phone Number</label>
-				<input type="text" name="PhoneNumber" id="phone-number">  
-				<label for="special-requests">Special Requests</label>
-				<textarea id="special-requests" maxlength="500"></textarea>
-			</fieldset>
-			<fieldset>
-				<legend>Occasion</legend>
-				<p>Occasion</p>
-					<select name="Occasion">
-						<option>Birthday</option>
-						<option>Halloween</option>
-						<option>Christmas</option>
-						<option>No special occasion</option>
-						<option>Other</option>
-					</select>
-			</fieldset>
-			<fieldset>
-				<legend>Quantity</legend>
-				<div class="row"></div>
-					<div>
-						<label>
-							<input type="radio" name="Quantity" value="Individual">
-							Individual
-						</label>
-					</div>
-					<div>
-						<label>
-							<input type="radio" name="Quantity" value="One Dozen">
-							One Dozen
-						</label>
-					</div>
-					<div>
-						<label>
-							<input type="radio" name="Quantity" value="Two Dozen">
-							Two Dozen
-						</label>
-					</div>
-			</fieldset>
-			<fieldset>
-				<legend>Flavor</legend>
-				<div class="row">
-					<div>
-						<label>
-							<input type="checkbox" name="Flavor" value="Wedding Cake">
-							Wedding Cake
-						</label>
-						<label>
-							<input type="checkbox" name="Flavor" value="Go Big Red">
-							Go Big Red
-						</label>
-						<label>
-							<input type="checkbox" name="Flavor" value="Signature">
-							Signature
-						</label>
-					</div>
-					<div>
-						<label>
-							<input type="checkbox" name="Flavor" value="Wedding Cake">
-							The Tuxedo
-						</label>
-						<label>
-							<input type="checkbox" name="Flavor" value="Wedding Cake">
-							PB Cup
-						</label>
-						<label>
-							<input type="checkbox" name="Flavor" value="Wedding Cake">
-							Chocolate Lovers
-						</label>
-					</div>
-					<div>
-						<label>
-							<input type="checkbox" name="Flavor" value="Wedding Cake">
-							Princess
-						</label>
-						<label>
-							<input type="checkbox" name="Flavor" value="Wedding Cake">
-							Cookies &amp; Cream
-						</label>
-					</div>
-				</div>
-			</fieldset>
-			<fieldset>
-				<legend>Type</legend>
-				<div class="row"></div>
-					<div>
-						<label>
-							<input type="radio" name="Type" value="Signature">
-							Signature
-						</label>
-					</div>
-					<div>
-						<label>
-							<input type="radio" name="Type" value="Allergen Free">
-							Allergen Free
-						</label>
-					</div>
-					<div>
-						<label>
-							<input type="radio" name="Type" value="Vegan">
-							Vegan
-						</label>
-					</div>
-			</fieldset>
-			<p><a href="https://www.paypal.com">Pay on Paypal</a></p>
+			<div class="row">
+				<fieldset class="f-l" id="fieldset-left">
+					<legend>Contact Order Information</legend>
+					<label for="first-name">First Name</label>
+					<input type="text" name="FirstName" id="first-name">
+					<label for="last-name">Last Name</label>
+					<input type="text" name="LastName" id="last-name">
+					<label for="email-address">Email Address</label>
+					<input type="email" name="EmailAddress" id="email-address">
+					<label for="phone-number">Phone Number</label>
+					<input type="text" name="PhoneNumber" id="phone-number">  
+					<label for="special-requests">Special Requests</label>
+					<textarea id="special-requests" maxlength="500"></textarea>
+				</fieldset>
+				<fieldset class="f-r" id="fieldset-right">
+					<fieldset>
+						<legend>Occasion</legend>
+							<select name="Occasion" id="dropdown">
+								<option>Birthday</option>
+								<option>Halloween</option>
+								<option>Christmas</option>
+								<option>No special occasion</option>
+								<option>Other</option>
+							</select>
+					</fieldset>
+					<fieldset id="quantity">
+						<legend>Quantity</legend>
+						<div class="row"></div>
+							<div class="f-l">
+								<label>
+									<input type="radio" name="Quantity" value="Individual">
+									Individual
+								</label>
+							</div>
+							<div class="f-l">
+								<label>
+									<input type="radio" name="Quantity" value="One Dozen">
+									One Dozen
+								</label>
+							</div>
+							<div class="f-r">
+								<label>
+									<input type="radio" name="Quantity" value="Two Dozen">
+									Two Dozen
+								</label>
+							</div>
+					</fieldset>
+					<fieldset id="flavor">
+						<legend>Flavor</legend>
+						<div class="row">
+							<div class="f-l flavor-section">
+								<label>
+									<input type="checkbox" name="Flavor" value="Wedding Cake">
+									Wedding Cake
+								</label>
+								<label>
+									<input type="checkbox" name="Flavor" value="Go Big Red">
+									Go Big Red
+								</label>
+								<label>
+									<input type="checkbox" name="Flavor" value="Signature">
+									Signature
+								</label>
+							</div>
+							<div class="f-l flavor-section">
+								<label>
+									<input type="checkbox" name="Flavor" value="Wedding Cake">
+									The Tuxedo
+								</label>
+								<label>
+									<input type="checkbox" name="Flavor" value="Wedding Cake">
+									PB Cup
+								</label>
+								<label>
+									<input type="checkbox" name="Flavor" value="Wedding Cake">
+									Chocolate Lovers
+								</label>
+							</div>
+							<div class="f-r flavor-section">
+								<label>
+									<input type="checkbox" name="Flavor" value="Wedding Cake">
+									Princess
+								</label>
+								<label>
+									<input type="checkbox" name="Flavor" value="Wedding Cake">
+									Cookies &amp; Cream
+								</label>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset id="type">
+						<legend>Type</legend>
+						<div class="row"></div>
+							<div class="f-l" id="signature-type">
+								<label>
+									<input type="radio" name="Type" value="Signature">
+									Signature
+								</label>
+							</div>
+							<div class="f-l" id="allergen-free-type">
+								<label>
+									<input type="radio" name="Type" value="Allergen Free">
+									Allergen Free
+								</label>
+							</div>
+							<div class="f-r" id="vegan-type">
+								<label>
+									<input type="radio" name="Type" value="Vegan">
+									Vegan
+								</label>
+							</div>
+					</fieldset>
+					<p id="paypal-btn"><a href="https://www.paypal.com">Pay on Paypal</a></p>
+				</fieldset>
+			</div>
 		</form>
 	</div>
 </section>
 <footer class="bg-brown">
 	<div class="wrapper">
-		<section>
-			<h4>Real Fake Authentic</h4>
-			<p>Specialty bakery dedicated to creating and baking several different sweet treats.</p>
-		</section>
-		<section>
-			<h4>Our Location</h4>
-			<p>123 Fake Street #101 Fakersville, FA 12345</p>
-		</section>
-		<section>
-			<h4>Connect</h4>
-			<p><a href="https://www.facebook.com/" target="_blank"></a> <span>Facebook</span></p>
-			<p><a href="https://www.tumblr.com/" target="_blank"></a> <span>Tumblr</span></p>
-			<p><a href="https://www.pinterest.com/" target="_blank"></a> <span>Pinterest</span></p>
-			<p><a href="https://www.linkedin.com/" target="_blank"></a> <span>Linked In</span></p>
-			<p><a href="https://www.rss.com/" target="_blank"></a> <span>RSS</span></p>
-		</section>
+		<div class="row">
+			<section class="f-l">
+				<h4>Real Fake Authentic</h4>
+				<p>Specialty bakery dedicated to creating and baking several different sweet treats.</p>
+			</section>
+			<section class="f-l">
+				<h4>Our Location</h4>
+				<p>123 Fake Street #101 Fakersville, FA 12345</p>
+			</section>
+			<section class="f-r">
+				<h4>Connect</h4>
+				<ul>
+					<li><a href="https://www.facebook.com/" target="_blank"></a> <span>Facebook</span></li>
+					<li><a href="https://www.tumblr.com/" target="_blank"></a> <span>Tumblr</span></li>
+					<li><a href="https://www.pinterest.com/" target="_blank"></a> <span>Pinterest</span></li>
+					<li><a href="https://www.linkedin.com/" target="_blank"></a> <span>Linked In</span></li>
+					<li><a href="https://www.rss.com/" target="_blank"></a> <span>RSS</span></li>
+				</ul>
+			</section>
+		</div>
 	</div>
 </footer>
 
