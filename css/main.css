@@ -32,7 +32,6 @@
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
-	font: 31px 'Open Sans', sans-serif;
 	color: #432920;
 	font: 400 14px 'Montserrat', sans-serif;
 }
@@ -43,42 +42,31 @@
 -------------------------------------------------------------- */
 /* 1.1 - Headings */
 
-h2 {
+h2, h3 {
 	text-transform: uppercase;
-	font-size: 28px;
-	font-weight: 500;	
 }
 
-#about-us h2, #hours h2 {
-	color: #7bcfc0;
-	margin-top: 0;
-}
-
-#our-treats h2, #daily-flavors h2, #place-order h2 {
-	text-align: center;
-}
-
-#hours h3 {
+h2, #hours h3 {
 	font-weight: 500;
 }
 
-#daily-flavors h2 {
-	padding-bottom: 52px;
+h2 {
+	font-size: 28px;
+}
+
+#about-us h2, #hours h2, h4 {
+	color: #7bcfc0;
+}
+
+#about-us h2, #hours h2 {
+	margin-top: 0;
 }
 
 h3 {
 	font: 20px 'Alice';
 	color: #432920;
 	margin-bottom: 14px;
-	text-transform: uppercase;
 }
-
-h4 {
-	color: #7bcfc0;
-	margin: 54px 0 14px;
-}
-
-
 
 /* 1.2 - Body Copy */
 
@@ -88,19 +76,17 @@ h4 {
 
 /* 1.3 - Buttons */
 
-#contact-btn {
-	margin-top: 42px;
+#about-us p:last-of-type a, #about-us p:nth-of-type(3) a, #our-treats section p:last-child a, form p a {
+	text-decoration: none;
 }
 
-#contact-btn a {
+#about-us p:last-of-type a {
 	color: #fff;
-	text-decoration: none;
-	text-transform: uppercase;
 	background-color: #c92720;
 	padding: 15px 20px;
 }
 
-#contact-btn a:hover {
+#about-us p:last-of-type a:hover {
 	background-color: #7bcfc0;
 }
 
@@ -109,7 +95,6 @@ h4 {
 }
 
 #about-us p:nth-of-type(3) a {
-	text-decoration: none;
 	font-weight: 600;
 }
 
@@ -117,29 +102,28 @@ a[href="tel:+18005551212"]:hover {
 	color: #7bcfc0; 
 }
 
-#our-treats section p:last-child a {
-	text-decoration: none;
-	background-color: #fff; 
+#our-treats section p:last-child a, form p a {
 	color: #c92720;
+}
+
+#our-treats section p:last-child a {
+	background-color: #fff; 
 	padding: 15px 25px;
 }
 
-#our-treats section p:last-child a:hover {
+#our-treats section p:last-child a:hover, form p a:hover {
 	color: #fff;
+}
+
+#our-treats section p:last-child a:hover, form p a:hover {
 	background-color: #9ae5d7;
 }
 
-#paypal-btn a {
-	color: #c92720;
-	text-decoration: none;
+form p a {
 	background-color: #fff;
 	padding: 15px 20px;
 }
 
-#paypal-btn a:hover {
-	color: #fff;
-	background-color: #9ae5d7;
-}
 
 /* 1.4 - Forms */
 #fieldset-left legend {
@@ -152,12 +136,6 @@ legend {
 
 #fieldset-left label, legend {
 	text-transform: uppercase;
-}
-
-fieldset {
-	border: none;
-	margin: 0;
-	padding: 0;
 }
 
 form {
@@ -175,85 +153,9 @@ label, input {
 	text-align: left;
 }
 
-#fieldset-right input {
-	display: inline;
-}
-
-#fieldset-left input {
-	height: 47px;
-}
-
-#fieldset-left input, #fieldset-left label, textarea {
-	width: 419px;	
-}
-
-label {
-	margin-top: 20px;
-}
-
-#fieldset-right {
-	width: 427px;
-	margin-left: 28px;
-}
-
-#fieldset-left label:first-of-type {
-	margin-top: 0;
-}
-
-#fieldset-right input {
-	padding-right: 0;
-}
-
-#occasion select {
-	width: 359px;
-}
-
-#quantity {
-	margin: 28px 0 46px;
-}
-
-#quantity label {
-	margin-bottom: 0;
-}
-
-#flavor {
-	margin-bottom: 59px
-}
-
-#dropdown {
-	width: 427px;
-	height: 47px;
-	margin-top: 15px;
-}
-
-#fieldset-left label, legend {
-	margin-bottom: 15px;
-}
-
-#fieldset-right legend {
-	margin-bottom: 0;
-}
-
-textarea {
-	height: 183px;
-}
-
-#quantity label {
-	margin-right: 52px;
-}
-
-.flavor-section:first-child {
-	margin-right: 24px;
-}
-
-#signature-type, #allergen-free-type, #vegan-type {
-	margin-right: 59px;
-}
-
-#paypal-btn {
+form p {
 	margin: 108px 0 0 276px;
 	text-transform: uppercase;
-	
 }
 
 
@@ -282,7 +184,7 @@ table {
 	margin: 32px 0 50px 230px;
 }
 
-#prices {
+caption span {
 	font: 700 20px 'Alice';
 	text-transform: uppercase;
 	background-color: #fff;
@@ -317,11 +219,11 @@ tbody tr:nth-child(even) {
 	background-color: #fff;
 }
 
-td{
+td {
 	padding: 10px 45px;
 }
 
-thead tr th:first-child{
+thead tr th:first-child {
 	padding-left: 211px;
 }
 
@@ -329,7 +231,7 @@ td:last-of-type {
 	text-align: left;
 }
 
-span, tr td:first-child, th  {
+span, tr td:first-child, th {
 	font-weight: 500;
 }
 
@@ -341,6 +243,11 @@ span, tr td:first-child, th  {
 /* 2.1 - Main */
 nav {
 	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #432920;
 }
 
 nav li {
@@ -372,6 +279,22 @@ nav li a:hover {
 .wrapper {
 	width: 1070px;
 	margin: 0 auto;
+}
+
+h4 {
+	margin: 54px 0 14px;
+}
+
+#about-us p:last-of-type {
+	margin-top: 42px;
+}
+
+#our-treats h2, #daily-flavors h2, #place-order h2 {
+	text-align: center;
+}
+
+#daily-flavors h2 {
+	padding-bottom: 52px;
 }
 
 #about p:first-child {
@@ -429,6 +352,117 @@ nav li a:hover {
 	padding: 10px 0;
 }
 
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+#fieldset-left input {
+	height: 47px;
+}
+
+#fieldset-left input, #fieldset-left label, textarea {
+	width: 419px;	
+}
+
+label {
+	margin-top: 20px;
+}
+
+#fieldset-right input {
+	display: inline;
+}
+
+#fieldset-right {
+	width: 427px;
+	margin-left: 28px;
+}
+
+#fieldset-left label:first-of-type {
+	margin-top: 0;
+}
+
+#fieldset-right input {
+	padding-right: 0;
+}
+
+#occasion select {
+	width: 359px;
+}
+
+#quantity {
+	margin: 28px 0 46px;
+}
+
+#quantity label {
+	margin-bottom: 0;
+}
+
+#flavor {
+	margin-bottom: 59px
+}
+
+#dropdown {
+	width: 427px;
+	height: 47px;
+	margin-top: 15px;
+}
+
+#fieldset-left label, legend {
+	margin-bottom: 15px;
+}
+
+#fieldset-right legend {
+	margin-bottom: 0;
+}
+
+textarea {
+	height: 183px;
+}
+
+#quantity label {
+	margin-right: 52px;
+}
+
+.flavor-section label:first-child {
+	margin-right: 24px;
+}
+
+#signature-type, #allergen-free-type, #vegan-type {
+	margin-right: 59px;
+}
+
+.circle {
+	margin-left: 50px;
+}
+
+#circle-one, #circle-two, #circle-three {
+	width: 180px; 
+	height: 180px;  
+	-moz-border-radius: 90px; 
+	-webkit-border-radius: 90px; 
+	-ms-border-radius: 90px;
+	-os-border-radius: 90px;
+	border-radius: 90px; 
+	background-color: #fff;
+}						
+
+#our-treats section {
+	width: 285px;
+	text-align: center;
+}
+
+#our-treats section:nth-child(2) {
+	margin-left: 113px;
+}
+
+#our-treats p:first-of-type {
+	color: #fff;
+	text-align: center;
+	line-height: 28px;
+}
+
 /* 3.2	- Site Header */
 .row {
 	overflow: auto;
@@ -451,37 +485,6 @@ nav li a:hover {
 	text-decoration: none;
 }
 
-#circle-one, #circle-two, #circle-three {
-	width: 180px; 
-	height: 180px;  
-	-moz-border-radius: 90px; 
-	-webkit-border-radius: 90px; 
-	-ms-border-radius: 90px;
-	-os-border-radius: 90px;
-	border-radius: 90px; 
-	background-color: #fff;
-}						
-
-.circle {
-	margin-left: 50px;
-	
-}
-
-#our-treats section {
-	width: 285px;
-	text-align: center;
-}
-
-#our-treats section:nth-child(2) {
-	margin-left: 113px;
-}
-
-#our-treats p:first-of-type {
-	color: #fff;
-	text-align: center;
-	line-height: 28px;
-	
-}
 /* 3.3	- Site Footer */
 footer {
 	padding-bottom: 36px;
@@ -531,37 +534,25 @@ div#home-image {
 	margin: 0 99px;
 }						
 
-#about img {
-	float: left;
+div#circle-one, div#circle-two, div#circle-three {
+	-webkit-background-size: 100px;
+	-moz-background-size: 100px;
+	-o-background-size: 100px;
+	-ms-background-size: 100px;
+	background-size: 100px;
 }
 
 div#circle-one {
-	background: url(../img/cupcake-one.png);
-	background-repeat: no-repeat;
-	background-size: 100px;
-	background-position: center;
-	background-color: #fff;
+	background: #fff url(../img/cupcake-lemon.png) no-repeat scroll center;
 }
 
 div#circle-two {
-	background: url(../img/cupcake-two.png);
-	background-repeat: no-repeat;
-	background-size: 100px;
-	background-position: center;
-	background-color: #fff;
+	background: #fff url(../img/cupcake-chocolate.png) no-repeat scroll center;
 }
 
 div#circle-three {
-	background: url(../img/cupcake-three.png);
-	background-repeat: no-repeat;
-	background-size: 100px;
-	background-position: center;
-	background-color: #fff;
-	
+	background: #fff url(../img/cupcake-vanilla.png) no-repeat scroll center;
 }
-
-
-
 
 footer ul {
 	list-style: none;
@@ -590,19 +581,19 @@ footer ul li:first-child a {
 }
 
 footer ul li:nth-child(2) a {
-	background: url(../img/sprite-tumblr.png)
+	background: url(../img/sprite-tumblr.png);
 }
 
 footer ul li:nth-child(3) a {
-	background: url(../img/sprite-pinterest.png)
+	background: url(../img/sprite-pinterest.png);
 }
 
 footer ul li:nth-child(4) a {
-	background: url(../img/sprite-linked-in.png)
+	background: url(../img/sprite-linked-in.png);
 }
 
 footer ul li:last-child a {
-	background: url(../img/sprite-rss.png)
+	background: url(../img/sprite-rss.png);
 }
 
 footer ul li a:hover {
@@ -618,6 +609,10 @@ footer ul li a:hover {
 /* 6.1	- Float Left */
 
 .f-l {
+	float: left;
+}
+
+#about img {
 	float: left;
 }
 

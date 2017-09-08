@@ -11,54 +11,57 @@
 
 <body>
 <header id="home" class="bg-brown">
-	<div class="wrapper">
-		<nav>
-			<ul>
-				<li class="nav-btn"><a href="#">Home</a></li>
-				<li class="nav-btn"><a href="#about">About</a></li>
-				<li><h1><a href="#home"><img src="img/cupcake-logo.png" alt="Logo and heading one for Real, Authentic, Fake cupcakes"></a></h1></li>
-				<li class="nav-btn"><a href="#products">Products</a></li>
-				<li class="nav-btn"><a href="#contact-us">Contact Us</a></li>
-			</ul>
+	<div class="bg-brown">
+		<nav class="smooth-scroll">
+			<div class="wrapper">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><h1><a href="#home"><img src="img/cupcake-logo.png" alt="Real Authentic Fake"></a></h1></li>
+					<li><a href="#products">Products</a></li>
+					<li><a href="#place-order">Contact Us</a></li>
+				</ul>
+			</div>
 		</nav>
+	</div>
 		<div id="home-image">
 			<p><a href="#daily-flavors">Try Our Signature Cupcake</a></p>
 		</div>
-	</div>
+	
 </header>
 <div id="about" class="wrapper">
 	<p>Specialty bakery dedicated to creating and baking<br>several different sweet treats.</p>
-		<div class="row">
-			<img src="img/cupcake-blue.jpg" alt="White frosted cupcake with blue wrapper, sitting on top of cake dish.">
-			<section class="f-l" id="about-us">
-				<header>
-					<h2>About Us</h2> 
-				</header>
-				<p>We offer cupcakes in three sizes: Jumbo Gourmet (filled), Regular &amp; Mini. Plus, we make Cakes, Cake Balls/Pops, Brownie Shots and several other sweet treats!</p>
-				<p>We are open 7 days a week, beginning Sunday at 11 am till 4 pm. Monday through Friday 8 am till 7 pm, and Saturday 10 am to 5 pm.</p>
-				<p>Stop in today for a treat or give us a call for an order!  We take special orders daily and provide delivery options. For pricing inquiries, <a href="tel:+18005551212">please give us a call</a>.</p>
-				<p id="contact-btn"><a href="#">Contact Us</a></p>
-			</section>
-			<section class="f-r" id="hours">
-				<header>
-					<h2>Hours</h2>
-				</header>
-				<ul>
-					<li>
-						<h3>Monday&ndash;Friday</h3>
-						<p><time datetime="08:00">8:00 AM</time>&ndash;<time datetime="19:00">7:00 PM</time></p>
-					</li>
-					<li>
-						<h3>Saturday</h3>
-						<p><time datetime="10:00">10:00 AM</time>&ndash;<time datetime="17:00">5:00 PM</time></p>
-					</li>
-					<li>
-						<h3>Sunday</h3>
-						<p><time datetime="11:00">11:00 AM</time>&ndash;<time datetime="16:00">4:00 PM</time></p>
-					</li>
-				</ul>
-			</section>
-		</div>
+	<div class="row">
+		<img src="img/cupcake-blue.jpg" alt="null">
+		<section class="f-l" id="about-us">
+			<header>
+				<h2>About Us</h2> 
+			</header>
+			<p>We offer cupcakes in three sizes: Jumbo Gourmet (filled), Regular &amp; Mini. Plus, we make Cakes, Cake Balls/Pops, Brownie Shots and several other sweet treats!</p>
+			<p>We are open 7 days a week, beginning Sunday at <time datetime="11:00">11 am</time> till <time datetime="16:00">4 PM</time>. Monday through Friday <time datetime="08:00">8 AM</time> till <time datetime="19:00">7 PM</time>, and Saturday <time datetime="10:00">10 AM</time> to <time datetime="17:00">5 PM</time>.</p>
+			<p>Stop in today for a treat or give us a call for an order!  We take special orders daily and provide delivery options. For pricing inquiries, <a href="tel:+18005551212">please give us a call</a>.</p>
+			<p><a href="#place-order">Contact Us</a></p>
+		</section>
+		<section class="f-r" id="hours">
+			<header>
+				<h2>Hours</h2>
+			</header>
+			<ul>
+				<li>
+					<h3>Monday&ndash;Friday</h3>
+					<p><time datetime="08:00">8:00 AM</time>&ndash;<time datetime="19:00">7:00 PM</time></p>
+				</li>
+				<li>
+					<h3>Saturday</h3>
+					<p><time datetime="10:00">10:00 AM</time>&ndash;<time datetime="17:00">5:00 PM</time></p>
+				</li>
+				<li>
+					<h3>Sunday</h3>
+					<p><time datetime="11:00">11:00 AM</time>&ndash;<time datetime="16:00">4:00 PM</time></p>
+				</li>
+			</ul>
+		</section>
+	</div>
 </div>
 <section id="products" class="bg-blue">
 	<div class="wrapper" id="our-treats">
@@ -139,7 +142,7 @@
 		</section>
 		<section class="f-l">
 			<header>
-				<h3 id="signature">Signature</h3><img src="img/cherry-icon.jpg" alt="cherry icon next to Signature cupcake description to help draw attention to this particular kind of cupcake.">
+				<h3 id="signature">Signature</h3><img src="img/cherry-icon.jpg" alt="null">
 			</header>
 			<p>Chocolate Cake frosted with our favorite Cupcakes &amp; more colors, chocolate and hot pink swirled buttercream.</p>
 		</section>
@@ -158,7 +161,7 @@
 		</header>
 		<p>Time limits for orders are 48 hours; please wait for a confirmation email to verify your order.</p>
 		<table>
-			<caption><div id="prices">Prices</div></caption>
+			<caption><span>Prices</span></caption>
 			<thead>
 				<tr>
 					<th colspan="2">Mini</th>
@@ -185,121 +188,116 @@
 				</tr>
 			</tbody>
 		</table>
-		<form>
-			<div class="row">
-				<fieldset class="f-l" id="fieldset-left">
-					<legend>Contact Order Information</legend>
-					<label for="first-name">First Name</label>
-					<input type="text" name="FirstName" id="first-name">
-					<label for="last-name">Last Name</label>
-					<input type="text" name="LastName" id="last-name">
-					<label for="email-address">Email Address</label>
-					<input type="email" name="EmailAddress" id="email-address">
-					<label for="phone-number">Phone Number</label>
-					<input type="text" name="PhoneNumber" id="phone-number">  
-					<label for="special-requests">Special Requests</label>
-					<textarea id="special-requests" maxlength="500"></textarea>
+		<form class="row">
+			<fieldset class="f-l" id="fieldset-left">
+				<legend>Contact Order Information</legend>
+				<label for="first-name">First Name</label>
+				<input type="text" name="FirstName" id="first-name">
+				<label for="last-name">Last Name</label>
+				<input type="text" name="LastName" id="last-name">
+				<label for="email-address">Email Address</label>
+				<input type="email" name="EmailAddress" id="email-address">
+				<label for="phone-number">Phone Number</label>
+				<input type="tel" name="PhoneNumber" id="phone-number">  
+				<label for="special-requests">Special Requests</label>
+				<textarea id="special-requests" name="Special Requests" maxlength="500"></textarea>
+			</fieldset>
+			<div class="f-r" id="fieldset-right">
+				<fieldset>
+					<legend>Occasion</legend>
+						<select name="Occasion" id="dropdown">
+							<option>Birthday</option>
+							<option>Halloween</option>
+							<option>Christmas</option>
+							<option>No special occasion</option>
+							<option>Other</option>
+						</select>
 				</fieldset>
-				<fieldset class="f-r" id="fieldset-right">
-					<fieldset>
-						<legend>Occasion</legend>
-							<select name="Occasion" id="dropdown">
-								<option>Birthday</option>
-								<option>Halloween</option>
-								<option>Christmas</option>
-								<option>No special occasion</option>
-								<option>Other</option>
-							</select>
-					</fieldset>
-					<fieldset id="quantity">
-						<legend>Quantity</legend>
-						<div class="row"></div>
-							<div class="f-l">
-								<label>
-									<input type="radio" name="Quantity" value="Individual">
-									Individual
-								</label>
-							</div>
-							<div class="f-l">
-								<label>
-									<input type="radio" name="Quantity" value="One Dozen">
-									One Dozen
-								</label>
-							</div>
-							<div class="f-r">
-								<label>
-									<input type="radio" name="Quantity" value="Two Dozen">
-									Two Dozen
-								</label>
-							</div>
-					</fieldset>
-					<fieldset id="flavor">
-						<legend>Flavor</legend>
-						<div class="row">
-							<div class="f-l flavor-section">
-								<label>
-									<input type="checkbox" name="Flavor" value="Wedding Cake">
-									Wedding Cake
-								</label>
-								<label>
-									<input type="checkbox" name="Flavor" value="Go Big Red">
-									Go Big Red
-								</label>
-								<label>
-									<input type="checkbox" name="Flavor" value="Signature">
-									Signature
-								</label>
-							</div>
-							<div class="f-l flavor-section">
-								<label>
-									<input type="checkbox" name="Flavor" value="Wedding Cake">
-									The Tuxedo
-								</label>
-								<label>
-									<input type="checkbox" name="Flavor" value="Wedding Cake">
-									PB Cup
-								</label>
-								<label>
-									<input type="checkbox" name="Flavor" value="Wedding Cake">
-									Chocolate Lovers
-								</label>
-							</div>
-							<div class="f-r flavor-section">
-								<label>
-									<input type="checkbox" name="Flavor" value="Wedding Cake">
-									Princess
-								</label>
-								<label>
-									<input type="checkbox" name="Flavor" value="Wedding Cake">
-									Cookies &amp; Cream
-								</label>
-							</div>
+				<fieldset id="quantity">
+					<legend>Quantity</legend>
+					<div class="row"></div>
+						<div class="f-l">
+							<label>
+								<input type="radio" name="Quantity" value="Individual">
+								Individual
+							</label>
 						</div>
-					</fieldset>
-					<fieldset id="type">
-						<legend>Type</legend>
-						<div class="row"></div>
-							<div class="f-l" id="signature-type">
-								<label>
-									<input type="radio" name="Type" value="Signature">
-									Signature
-								</label>
-							</div>
-							<div class="f-l" id="allergen-free-type">
-								<label>
-									<input type="radio" name="Type" value="Allergen Free">
-									Allergen Free
-								</label>
-							</div>
-							<div class="f-r" id="vegan-type">
-								<label>
-									<input type="radio" name="Type" value="Vegan">
-									Vegan
-								</label>
-							</div>
-					</fieldset>
-					<p id="paypal-btn"><a href="https://www.paypal.com">Pay on Paypal</a></p>
+						<div class="f-l">
+							<label>
+								<input type="radio" name="Quantity" value="One Dozen">
+								One Dozen
+							</label>
+						</div>
+						<div class="f-r">
+							<label>
+								<input type="radio" name="Quantity" value="Two Dozen">
+								Two Dozen
+							</label>
+						</div>
 				</fieldset>
+				<fieldset id="flavor" class="row">
+					<legend>Flavor</legend>
+					<div class="f-l flavor-section">
+						<label>
+							<input type="checkbox" name="Flavor" value="Wedding Cake">
+							Wedding Cake
+						</label>
+						<label>
+							<input type="checkbox" name="Flavor" value="Go Big Red">
+							Go Big Red
+						</label>
+						<label>
+							<input type="checkbox" name="Flavor" value="Signature">
+							Signature
+						</label>
+					</div>
+					<div class="f-l flavor-section">
+						<label>
+							<input type="checkbox" name="Flavor" value="Wedding Cake">
+							The Tuxedo
+						</label>
+						<label>
+							<input type="checkbox" name="Flavor" value="Wedding Cake">
+							PB Cup
+						</label>
+						<label>
+							<input type="checkbox" name="Flavor" value="Wedding Cake">
+							Chocolate Lovers
+						</label>
+					</div>
+					<div class="f-r flavor-section">
+						<label>
+							<input type="checkbox" name="Flavor" value="Wedding Cake">
+							Princess
+						</label>
+						<label>
+							<input type="checkbox" name="Flavor" value="Wedding Cake">
+							Cookies &amp; Cream
+						</label>
+					</div>
+				</fieldset>
+				<fieldset id="type" class="row">
+					<legend>Type</legend>
+						<div class="f-l" id="signature-type">
+							<label>
+								<input type="radio" name="Type" value="Signature">
+								Signature
+							</label>
+						</div>
+						<div class="f-l" id="allergen-free-type">
+							<label>
+								<input type="radio" name="Type" value="Allergen Free">
+								Allergen Free
+							</label>
+						</div>
+						<div class="f-r" id="vegan-type">
+							<label>
+								<input type="radio" name="Type" value="Vegan">
+								Vegan
+							</label>
+						</div>
+				</fieldset>
+				<p><a href="https://www.paypal.com">Pay on Paypal</a></p>
 			</div>
 		</form>
 	</div>
@@ -328,6 +326,9 @@
 		</div>
 	</div>
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/functions.js"></script>
 
 
 
