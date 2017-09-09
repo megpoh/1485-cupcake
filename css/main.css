@@ -52,6 +52,7 @@ h2, #hours h3 {
 
 h2 {
 	font-size: 28px;
+	margin-top: 0;
 }
 
 #about-us h2, #hours h2, h4 {
@@ -80,10 +81,12 @@ h3 {
 	text-decoration: none;
 }
 
-#about-us p:last-of-type a {
-	color: #fff;
-	background-color: #c92720;
+#about-us p:last-of-type a, form p a {
 	padding: 15px 20px;
+}
+
+#about-us p:last-of-type a {
+	background-color: #c92720;
 }
 
 #about-us p:last-of-type a:hover {
@@ -107,11 +110,10 @@ a[href="tel:+18005551212"]:hover {
 }
 
 #our-treats section p:last-child a {
-	background-color: #fff; 
 	padding: 15px 25px;
 }
 
-#our-treats section p:last-child a:hover, form p a:hover {
+#our-treats section p:last-child a:hover, form p a:hover, #about-us p:last-of-type a {
 	color: #fff;
 }
 
@@ -119,9 +121,8 @@ a[href="tel:+18005551212"]:hover {
 	background-color: #9ae5d7;
 }
 
-form p a {
+form p a, #our-treats section p:last-child a {
 	background-color: #fff;
-	padding: 15px 20px;
 }
 
 
@@ -130,11 +131,11 @@ form p a {
 	display: none;
 }
 
-legend {
+legend, label, input {
 	text-align: left;
 }
 
-#fieldset-left label, legend {
+#fieldset-left label, legend, form p {
 	text-transform: uppercase;
 }
 
@@ -150,14 +151,11 @@ input[type="text"] {
 
 label, input {
 	display: block;
-	text-align: left;
 }
 
 form p {
 	margin: 108px 0 0 276px;
-	text-transform: uppercase;
 }
-
 
 /* 1.5 - Lists */
 
@@ -186,28 +184,28 @@ table {
 
 caption span {
 	font: 700 20px 'Alice';
-	text-transform: uppercase;
 	background-color: #fff;
 	padding: 8px 23px;
 }
 
-caption {
+caption span, th {
+	text-transform: uppercase;
+}
+
+caption, thead, tbody {
 	text-align: center;
+}
+
+caption {
 	background-color: #c7ebe4;
 	padding: 20px 235px;
 }
 
 th {
-	background-color: #fff;
 	padding: 10px 45px;
-	text-transform: uppercase;
 }
 
-thead, tbody {
-	text-align: center;
-}
-
-tbody tr td:first-child {
+tbody tr td:first-child, td:last-of-type {
 	text-align: left;
 }
 
@@ -215,7 +213,7 @@ tbody tr:nth-child(odd) {
 	background-color: #c7ebe4;
 }
 
-tbody tr:nth-child(even) {
+tbody tr:nth-child(even), th {
 	background-color: #fff;
 }
 
@@ -225,10 +223,6 @@ td {
 
 thead tr th:first-child {
 	padding-left: 211px;
-}
-
-td:last-of-type {
-	text-align: left;
 }
 
 span, tr td:first-child, th {
@@ -289,18 +283,17 @@ h4 {
 	margin-top: 42px;
 }
 
-#our-treats h2, #daily-flavors h2, #place-order h2 {
+#our-treats h2, #daily-flavors h2, #place-order h2, #about p:first-child, #place-order p:first-of-type, #our-treats p:first-of-type, #our-treats section {
 	text-align: center;
 }
 
 #daily-flavors h2 {
 	padding-bottom: 52px;
+	margin-bottom: 0;
 }
 
 #about p:first-child {
 	font: 20px/34px 'Alice';
-	text-transform: uppercase;
-	text-align: center;
 	color: #432920;
 	margin-bottom: 129px;
 }
@@ -326,7 +319,7 @@ h4 {
 	margin-top: 38px;
 }
 
-#our-treats section p:last-child {
+#our-treats section p:last-child, #about p:first-child {
 	text-transform: uppercase;
 }
 
@@ -344,9 +337,6 @@ h4 {
 	padding: 130px 0;
 }
 
-#place-order p:first-of-type {
-	text-align: center;
-}
 
 #treats-row {
 	padding: 10px 0;
@@ -395,10 +385,6 @@ label {
 	margin: 28px 0 46px;
 }
 
-#quantity label {
-	margin-bottom: 0;
-}
-
 #flavor {
 	margin-bottom: 59px
 }
@@ -413,7 +399,7 @@ label {
 	margin-bottom: 15px;
 }
 
-#fieldset-right legend {
+#fieldset-right legend, #quantity label {
 	margin-bottom: 0;
 }
 
@@ -450,7 +436,6 @@ textarea {
 
 #our-treats section {
 	width: 285px;
-	text-align: center;
 }
 
 #our-treats section:nth-child(2) {
@@ -459,7 +444,6 @@ textarea {
 
 #our-treats p:first-of-type {
 	color: #fff;
-	text-align: center;
 	line-height: 28px;
 }
 
