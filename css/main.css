@@ -93,16 +93,12 @@ h3 {
 	background-color: #7bcfc0;
 }
 
-#home-image a:hover {
+#home-image a:hover, a[href="tel:+18005551212"]:hover {
 	color: #7bcfc0;
 }
 
 #about-us p:nth-of-type(3) a {
 	font-weight: 600;
-}
-
-a[href="tel:+18005551212"]:hover {
-	color: #7bcfc0; 
 }
 
 #our-treats section p:last-child a, form p a {
@@ -197,7 +193,6 @@ caption, thead, tbody {
 }
 
 caption {
-	background-color: #c7ebe4;
 	padding: 20px 235px;
 }
 
@@ -209,7 +204,7 @@ tbody tr td:first-child, td:last-of-type {
 	text-align: left;
 }
 
-tbody tr:nth-child(odd) {
+tbody tr:nth-child(odd), caption {
 	background-color: #c7ebe4;
 }
 
@@ -421,18 +416,7 @@ textarea {
 
 .circle {
 	margin-left: 50px;
-}
-
-#circle-one, #circle-two, #circle-three {
-	width: 180px; 
-	height: 180px;  
-	-moz-border-radius: 90px; 
-	-webkit-border-radius: 90px; 
-	-ms-border-radius: 90px;
-	-os-border-radius: 90px;
-	border-radius: 90px; 
-	background-color: #fff;
-}						
+}				
 
 #our-treats section {
 	width: 285px;
@@ -511,30 +495,42 @@ footer section:last-child {
 div#home-image {
 	background-image: url(../img/heart-cupcake.jpg);
 	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
 	background-size: cover;
 	height: 407px; 
 	background-position: center;
 	padding: 221px 99px 0 0;
-	margin: 0 99px;
+	margin: 50px 99px;
 }						
 
-div#circle-one, div#circle-two, div#circle-three {
+#treats-row section:first-of-type div, #treats-row section:nth-of-type(2) div, #treats-row section:last-of-type div {
 	-webkit-background-size: 100px;
 	-moz-background-size: 100px;
 	-o-background-size: 100px;
 	-ms-background-size: 100px;
 	background-size: 100px;
+	width: 180px; 
+	height: 180px;  
+	-moz-border-radius: 90px; 
+	-webkit-border-radius: 90px; 
+	-ms-border-radius: 90px;
+	-os-border-radius: 90px;
+	border-radius: 90px; 
+	background-color: #fff;
 }
 
-div#circle-one {
+#treats-row section:first-of-type div {
 	background: #fff url(../img/cupcake-lemon.png) no-repeat scroll center;
 }
 
-div#circle-two {
+#treats-row section:nth-of-type(2) div {
 	background: #fff url(../img/cupcake-chocolate.png) no-repeat scroll center;
 }
 
-div#circle-three {
+#treats-row section:last-of-type div {
 	background: #fff url(../img/cupcake-vanilla.png) no-repeat scroll center;
 }
 
